@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Html CSS e JavaScript</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .conteinerTopo ul {
+            list-style-type: none;
+            margin: 0px 0px;
+        }
+
+        .conteinerTopoDivSuper {
+            font-size: 20px;
+            width: 100vw;
+            display: flex;
+            padding: 50px;            
+            /*Centraliza na horizontal. Só pode ser usado por causa do display flex!*/
+            align-items: center;
+            /*Centraliza na vertical. Só pode ser usado por causa do display flex!*/
+            background: linear-gradient(90deg, black, black, white);
+            height: 120px;                                   
+        }
+
+        .conteinerTopoDivSuper ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .conteinerTopoDivSuper a {
+            text-decoration: none;
+            color: white;                    
+        }
+        
+        .conteinerTopoDivSuper a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            width: 200px;
+            background: black;            
+        }
+
+        .logo img {
+            width: 220px;            
+        }
+
+        header {
+            display: flex;
+        }
+    </style>
+    <header>
+        <div class="logo">
+            <img src="./imagem/logo02.png">;
+        </div>
+        <nav class="conteinerTopo">
+            <div class="conteinerTopoDivSuper">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Verifica Maior de Idade</a></li>
+                    <li><a href="#">Calcular Média Aluno</a></li>
+                    <li><a href="#">Calcular IMC</a></li>
+                    <li><a href="#">Calcular Aumento</a></li>                    
+                </ul>
+            </div>            
+        </nav>
+    </header>
+</body>
+</html>
