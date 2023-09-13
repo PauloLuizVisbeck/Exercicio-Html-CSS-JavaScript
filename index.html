@@ -14,7 +14,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-       
+
         .conteinerTopo ul {
             list-style-type: none;
             margin: 0px 0px;
@@ -24,12 +24,12 @@
             font-size: 20px;
             width: 100vw;
             display: flex;
-            padding: 50px;            
-            /*Centraliza na horizontal. Só pode ser usado por causa do display flex!*/
+            padding: 50px;
+            
             align-items: center;
             /*Centraliza na vertical. Só pode ser usado por causa do display flex!*/
             background: linear-gradient(90deg, black, black, white);
-            height: 120px;                                   
+            height: 120px;
         }
 
         .conteinerTopoDivSuper ul li {
@@ -39,9 +39,9 @@
 
         .conteinerTopoDivSuper a {
             text-decoration: none;
-            color: white;                    
+            color: white;
         }
-        
+
         .conteinerTopoDivSuper a:hover {
             text-decoration: none;
             color: red;
@@ -53,16 +53,33 @@
             align-items: center;
             height: 120px;
             width: 200px;
-            background: black;            
+            background: black;
         }
 
         .logo img {
-            width: 220px;            
+            width: 220px;
         }
 
         header {
             display: flex;
         }
+        
+        .conteinerTopoDivInf {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(90deg, black, black, white);
+            color: white;
+            font-size: 15;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            text-align: center;
+            /*Centraliza na horizontal. Só pode ser usado por causa do display flex!*/
+            justify-content: center;            
+        }
+
     </style>
     <header>
         <div class="logo">
@@ -75,10 +92,19 @@
                     <li><a href="#">Verifica Maior de Idade</a></li>
                     <li><a href="#">Calcular Média Aluno</a></li>
                     <li><a href="#">Calcular IMC</a></li>
-                    <li><a href="#">Calcular Aumento</a></li>                    
+                    <li><a href="#">Calcular Aumento</a></li>
                 </ul>
-            </div>            
+            </div>
         </nav>
     </header>
+
+    <h1>Pagina principal</h1>
+
+    <footer class="footer">
+        <div class="conteinerTopoDivInf">
+            <p>&copy; 2023 Entra21  Paulo Visbeck</p>
+        </div>
+    </footer>
 </body>
+
 </html>

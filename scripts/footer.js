@@ -1,0 +1,6 @@
+document.write("")
+document.write("<footer class='footer'>")
+document.write("<div class='conteinerTopoDivInf'>")
+document.write("<p>&copy; 2023 Entra21  Paulo Visbeck</p>")
+document.write("</div>")
+document.write("</footer>")

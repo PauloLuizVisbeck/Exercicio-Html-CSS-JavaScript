@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteinerTopo ul {
+    list-style-type: none;
+    margin: 0px 0px;
+}
+
+.conteinerTopoDivSuper {
+    font-size: 20px;
+    width: 100vw;
+    display: flex;
+    padding: 50px;
+    
+    align-items: center;
+    /*Centraliza na vertical. Só pode ser usado por causa do display flex!*/
+    background: linear-gradient(90deg, black, black, white);
+    height: 120px;
+}
+
+.conteinerTopoDivSuper ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.conteinerTopoDivSuper a {
+    text-decoration: none;
+    color: white;
+}
+
+.conteinerTopoDivSuper a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 200px;
+    background: black;
+}
+
+.logo img {
+    width: 220px;
+}
+
+header {
+    display: flex;
+}
+
+.conteinerTopoDivInf {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(90deg, black, black, white);
+    color: white;
+    font-size: 15;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+    /*Centraliza na horizontal. Só pode ser usado por causa do display flex!*/
+    justify-content: center;            
+}
