@@ -5,11 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleCalculaMediaAluno.css">
     <title>Exercicio de Html CSS e JavaScript</title>
 </head>
 <body>
     <script src="./scripts/barraDeNavegacao.js"></script>
-    <h1>Calcula Média</h1>
+    
+    <div class="externo">
+        <div class="container">
+            <h1>Calcula Média do Aluno</h1>
+
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" step="0.01"><br>
+
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" step="0.01"><br>
+
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" step="0.01"><br>
+
+            <label for="frequencia">Frequência (%):</label>
+            <input type="number" id="frequencia" step="1"><br>
+
+            <button onclick="calcularSituacao()">Calcular Situação</button><br><br>
+
+            <p id="resultado"></p>
+
+            <script>
+                function calcularSituacao() {
+                    // Obter as notas e a frequência do aluno
+                    var nota1 = parseFloat(document.getElementById("nota1").value);
+                    var nota2 = parseFloat(document.getElementById("nota2").value);
+                    var nota3 = parseFloat(document.getElementById("nota3").value);
+                    var frequencia = parseFloat(document.getElementById("frequencia").value);
+
+                    // Calcular a média das notas
+                    var media = (nota1 + nota2 + nota3) / 3;
+
+                    // Verificar a situação do aluno
+                    if (media < 5 || frequencia < 75) {
+                        document.getElementById("resultado").innerHTML = "Situação: Reprovado";
+                    } else if (media >= 5 && media < 7) {
+                        document.getElementById("resultado").innerHTML = "Situação: Em Recuperação";
+                    } else {
+                        document.getElementById("resultado").innerHTML = "Situação: Aprovado";
+                    }
+                }
+            </script>
+
+        </div>
+    </div>
+
     <script src="./scripts/footer.js"></script>    
 </body>
 </html>
