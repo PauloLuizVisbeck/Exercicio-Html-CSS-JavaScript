@@ -4,12 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleVerificaMaiorIdade.css">
     <title>Exercicio de Html CSS e JavaScript</title>
 </head>
 <body>
     <script src="./scripts/barraDeNavegacao.js"></script>
-    <h1>Verifica se maior de idade</h1>
+    
+    <!--Essa div fica entre dentro do <body> e entre os dois links que chamam o script da barra de navegação <nav> e do <footer> e assim não interferindo na formatação e posicionamento dos dois. -->
+        <div class="externo">
+            <!-- Início do conteúdo centralizado em uma caixa -->
+            <div class="container">
+                <h1>Verificar se Maior de Idade</h1>
+                <br>
+    
+                <!-- Label e entrada de idade -->
+                <label for="idade">Informe sua idade:</label>
+                <input type="number" id="idade" min="0"><br><br>
+    
+                <!-- Botão para verificar idade -->
+                <button onclick="verificarIdade()">Verificar</button>
+    
+                <!-- Exibição do resultado da verificação de idade -->
+                <p id="resultado"></p>
+            </div>
+            <!-- Fim do conteúdo centralizado em uma caixa -->
+    
+            <!-- Script JavaScript para verificar idade -->
+            <script>
+                function verificarIdade() {
+                    // Obtenha a idade inserida pelo usuário
+                    var idade = document.getElementById("idade").value;
+    
+                    // Verifique se a idade é maior ou igual a 18
+                    if (idade < 0 || idade > 120)
+                        document.getElementById("resultado").textContent = "Digite uma idade entre 0 e 120!"
+                    else if (idade >= 18) {
+                        document.getElementById("resultado").textContent = "Você é maior de idade.";
+                    } else {
+                        document.getElementById("resultado").textContent = "Você é menor de idade.";
+                    }
+                }
+            </script>
+        </div>
+
     <script src="./scripts/footer.js"></script>    
 </body>
 </html>
