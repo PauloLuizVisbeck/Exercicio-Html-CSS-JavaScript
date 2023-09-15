@@ -23,7 +23,7 @@
 
 .conteinerTopoDivSuper ul li {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px; /*Distância entre as palavras*/
 }
 
 .conteinerTopoDivSuper a {
@@ -53,7 +53,7 @@ header {
     display: flex;
 }
 
-.conteinerTopoDivInf {
+.conteinerFooter {
     display: flex;
     position: absolute;
     bottom: 0;
