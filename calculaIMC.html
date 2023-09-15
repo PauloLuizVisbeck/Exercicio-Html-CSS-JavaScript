@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleCalculaIMC.css">
     <title>Exercicio de Html CSS e JavaScript</title>
 </head>
+
 <body>
     <script src="./scripts/barraDeNavegacao.js"></script>
-    <h1>Calcula IMC</h1>
-    <script src="./scripts/footer.js"></script>    
+
+    <div class="externo">
+        <div class="container">
+            <h1>Calcula IMC</h1>
+
+            <label for="peso">Informe seu peso:</label>
+            <input type="number" id="peso" step="0.01"><br>
+
+            <label for="altura">Informe sua altura:</label>
+            <input type="number" id="altura" step="0.01"><br>
+
+            <button onclick="calcularIMC()">Calcular Situação</button><br><br>
+
+                <label for="valorIMC">Seu valor IMC:</label>
+                <p id="valorIMC"></p>
+                <label for="resultado">Situação:</label>
+                <p id="resultado"></p>
+            
+
+            <script>
+                function calcularIMC() {
+                    // Obtendo as informações de peso e altura do usuário
+                    var peso = parseFloat(document.getElementById("peso").value);
+                    var altura = parseFloat(document.getElementById("altura").value);
+
+                    // Calculando o IMC
+                    var imc = (peso / (altura * altura));
+                    // Arredondando o valor do IMC para duas casas decimais
+                    var imcArredondado = imc.toFixed(2);
+
+                    document.getElementById("valorIMC").innerHTML = imcArredondado
+
+                    // Verificando o IMC do usuário
+                    if (imc < 17) {
+                        document.getElementById("resultado").innerHTML = "Muito abaixo do peso";
+                    } if (imc >= 17 && imc < 18, 5) {
+                        document.getElementById("resultado").innerHTML = "Abaixo do peso";
+                    } if (imc >= 18, 5 && imc < 25) {
+                        document.getElementById("resultado").innerHTML = "Peso normal";
+                    } if (imc >= 25 && imc < 30) {
+                        document.getElementById("resultado").innerHTML = "Acima do peso";
+                    } if (imc >= 30 && imc < 35) {
+                        document.getElementById("resultado").innerHTML = "Obesidade I";
+                    } if (imc >= 35 && imc < 40) {
+                        document.getElementById("resultado").innerHTML = "Obesidade II (severa)";
+                    } if (imc > 40) {
+                        document.getElementById("resultado").innerHTML = "Obesidade III (mórbida)";
+                    }
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <script src="./scripts/footer.js"></script>
 </body>
+
 </html>
