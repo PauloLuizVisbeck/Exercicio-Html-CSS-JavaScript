@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleCalculaAumento.css">
     <title>Exercicio de Html CSS e JavaScript</title>
 </head>
+
 <body>
     <script src="./scripts/barraDeNavegacao.js"></script>
-    <h1>Calcula Aumento</h1>
-    <script src="./scripts/footer.js"></script>    
+
+    <div class="externo">
+        <div class="container">
+            <h1>Calcula Aumento de Salário</h1>
+
+            <label for="salario">Informe o salário:</label>
+            <input type="number" id="salario" step="1.00"><br>
+
+            <label for="cargo">Selecione a função:</label>
+            <select name="cargo" id="cargo">
+                <option value="em branco">---</option>
+                <option value="gerente">Gerente</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="operador">Operador</option>
+                <option value="outros">Outro</option>
+            </select>
+
+            <button onclick="calcularAumento()">Calcular Aumento</button><br><br>
+
+            <label for="resultado">Novo Salário:</label>
+            <p id="resultado"></p>
+            
+            <script>
+                function calcularAumento() {
+                    // Obter valor atual do salário e a função do funcionário escolhidos pelo usuário
+                    var salario = parseFloat(document.getElementById("salario").value);
+                    var cargo = document.getElementById("cargo").value;
+                    var percentual;
+                    
+                    if (cargo == "gerente")
+                        percentual = 1.05;
+                    if (cargo == "supervisor")
+                        percentual = 1.08;
+                    if (cargo == "operador")
+                        percentual = 1.09;
+                    if (cargo == "outros")
+                        percentual = 1.10;
+                    
+                    // Calculando novo salário
+                    var novoSalario = salario * percentual;
+                             
+                    document.getElementById("resultado").innerHTML = novoSalario.toFixed(2);
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <script src="./scripts/footer.js"></script>
 </body>
+
 </html>

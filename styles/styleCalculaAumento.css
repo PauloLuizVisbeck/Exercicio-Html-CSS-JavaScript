@@ -1,0 +1,32 @@
+.externo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+}
+.container {
+    text-align:center;  /*Centraliza os elementos dentro da div ("caixa")*/
+    padding: 30px;  /*Determina o tamanho da caixa*/      
+    border: 1px solid black;  /*Coloca uma linha ao redor da div ("caixa")*/
+    border-radius: 10px; /*Adiciona uma borda radial nos cantos com 10px de raio*/
+    background-color:rgb(116, 116, 245); /*Cor de preenchimento da div ("caixa")*/
+}
+
+/* Adiciona um estilo para colocar a label acima do input */
+.container label{
+    display: block;
+    margin-top: 10px; /*Distância superior das <label> em relação aos <input> */
+    margin-bottom: 10px;
+}
+
+.container button{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+.container select{
+    display: flex;
+    margin-left: 150px;
+}
