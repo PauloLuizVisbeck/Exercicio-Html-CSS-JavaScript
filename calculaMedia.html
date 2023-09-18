@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,29 @@
     <link rel="stylesheet" href="./styles/styleCalculaMediaAluno.css">
     <title>Exercicio de Html CSS e JavaScript</title>
 </head>
+
 <body>
     <script src="./scripts/barraDeNavegacao.js"></script>
-    
+
     <div class="externo">
         <div class="container">
             <h1>Calcula Média do Aluno</h1>
 
             <label for="nota1">Nota 1:</label>
-            <input type="number" id="nota1" step="0.01"><br>
+            <input type="number" id="nota1" step="0.00" min="0.00" max="10.00"><br>
 
             <label for="nota2">Nota 2:</label>
-            <input type="number" id="nota2" step="0.01"><br>
+            <input type="number" id="nota2" step="0.00" min="0.00" max="10.00"><br>
 
             <label for="nota3">Nota 3:</label>
-            <input type="number" id="nota3" step="0.01"><br>
+            <input type="number" id="nota3" step="0.00" min="0.00" max="10.00"><br>
 
             <label for="frequencia">Frequência (%):</label>
-            <input type="number" id="frequencia" step="1"><br>
+            <input type="number" id="frequencia" step="1" min="0" max="100"><br>
 
             <button onclick="calcularSituacao()">Calcular Situação</button><br><br>
-
+            
+            <p id="media"></p>
             <p id="resultado"></p>
 
             <script>
@@ -39,16 +42,32 @@
                     var nota3 = parseFloat(document.getElementById("nota3").value);
                     var frequencia = parseFloat(document.getElementById("frequencia").value);
 
-                    // Calcular a média das notas
-                    var media = (nota1 + nota2 + nota3) / 3;
+                    if ((nota1 < 0) || (nota1 > 10) || isNaN(nota1))
+                        document.getElementById("resultado").innerHTML = "Nota 01 inválida... Valores aceitos apenas de 0 a 10";
+                    else if ((nota2 < 0) || (nota2 > 10) || isNaN(nota2))
+                        document.getElementById("resultado").innerHTML = "Nota 02 inválida... Valores aceitos apenas de 0 a 10";
+                    else if ((nota3 < 0) || (nota3 > 10) || isNaN(nota3))
+                        document.getElementById("resultado").innerHTML = "Nota 03 inválida... Valores aceitos apenas de 0 a 10";
+                    else {
+                        //Verifica se o campo frequência não está em branco
+                        if (isNaN(frequencia))
+                            document.getElementById("resultado").innerHTML = "Informe a frequencia!";
+                        else if (frequencia < 0 || frequencia > 100)
+                            document.getElementById("resultado").innerHTML = "Frequência inválida... Valores aceitos apenas de 0 a 100";
+                        else {
+                            // Calcular a média das notas
+                            var media = (nota1 + nota2 + nota3) / 3;
+                            document.getElementById("media").innerHTML = "Sua média: " + media.toFixed(2);
 
-                    // Verificar a situação do aluno
-                    if (media < 5 || frequencia < 75) {
-                        document.getElementById("resultado").innerHTML = "Situação: Reprovado";
-                    } else if (media >= 5 && media < 7) {
-                        document.getElementById("resultado").innerHTML = "Situação: Em Recuperação";
-                    } else {
-                        document.getElementById("resultado").innerHTML = "Situação: Aprovado";
+                            // Verificar a situação do aluno
+                            if (media < 5 || frequencia < 75) {
+                                document.getElementById("resultado").innerHTML = "Situação: Reprovado";
+                            } else if (media >= 5 && media < 7) {
+                                document.getElementById("resultado").innerHTML = "Situação: Em Recuperação";
+                            } else {
+                                document.getElementById("resultado").innerHTML = "Situação: Aprovado";
+                            }
+                        }
                     }
                 }
             </script>
@@ -56,6 +75,6 @@
         </div>
     </div>
 
-    <script src="./scripts/footer.js"></script>    
+    <script src="./scripts/footer.js"></script>
 </body>
 </html>

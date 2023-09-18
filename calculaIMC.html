@@ -25,11 +25,11 @@
 
             <button onclick="calcularIMC()">Calcular Situação</button><br><br>
 
-                <label for="valorIMC">Seu valor IMC:</label>
-                <p id="valorIMC"></p>
-                <label for="resultado">Situação:</label>
-                <p id="resultado"></p>
-            
+            <label for="valorIMC">Seu valor IMC:</label>
+            <p id="valorIMC"></p>
+            <label for="resultado">Situação:</label>
+            <p id="resultado"></p>
+
 
             <script>
                 function calcularIMC() {
@@ -37,29 +37,33 @@
                     var peso = parseFloat(document.getElementById("peso").value);
                     var altura = parseFloat(document.getElementById("altura").value);
 
-                    // Calculando o IMC
-                    var imc = (peso / (altura * altura));
-                    // Arredondando o valor do IMC para duas casas decimais
-                    var imcArredondado = imc.toFixed(2);
+                    if (isNaN(peso) || isNaN(altura))
+                        document.getElementById("resultado").innerHTML = "Informe peso e altura para calcular seu IMC!!!";
+                    else {
+                        // Calculando o IMC
+                        var imc = (peso / (altura * altura));
+                        // Arredondando o valor do IMC para duas casas decimais
+                        var imcArredondado = imc.toFixed(2);
 
-                    document.getElementById("valorIMC").innerHTML = imcArredondado
+                        document.getElementById("valorIMC").innerHTML = imcArredondado
 
-                    // Verificando o IMC do usuário
-                    if (imc < 17) {
-                        document.getElementById("resultado").innerHTML = "Muito abaixo do peso";
-                    } if (imc >= 17 && imc < 18, 5) {
-                        document.getElementById("resultado").innerHTML = "Abaixo do peso";
-                    } if (imc >= 18, 5 && imc < 25) {
-                        document.getElementById("resultado").innerHTML = "Peso normal";
-                    } if (imc >= 25 && imc < 30) {
-                        document.getElementById("resultado").innerHTML = "Acima do peso";
-                    } if (imc >= 30 && imc < 35) {
-                        document.getElementById("resultado").innerHTML = "Obesidade I";
-                    } if (imc >= 35 && imc < 40) {
-                        document.getElementById("resultado").innerHTML = "Obesidade II (severa)";
-                    } if (imc > 40) {
-                        document.getElementById("resultado").innerHTML = "Obesidade III (mórbida)";
+                        // Verificando o IMC do usuário
+                        if (imc < 17)
+                            document.getElementById("resultado").innerHTML = "Muito abaixo do peso";
+                        else if (imc >= 17 && imc < 18.5)
+                            document.getElementById("resultado").innerHTML = "Abaixo do peso";
+                        else if (imc >= 18.5 && imc < 25)
+                            document.getElementById("resultado").innerHTML = "Peso normal";
+                        else if (imc >= 25 && imc < 30)
+                            document.getElementById("resultado").innerHTML = "Acima do peso";
+                        else if (imc >= 30 && imc < 35)
+                            document.getElementById("resultado").innerHTML = "Obesidade I";
+                        else if (imc >= 35 && imc < 40)
+                            document.getElementById("resultado").innerHTML = "Obesidade II (severa)";
+                        else if (imc > 40)
+                            document.getElementById("resultado").innerHTML = "Obesidade III (mórbida)";
                     }
+
                 }
             </script>
 

@@ -14,7 +14,7 @@
 }
 
 /* Adiciona um estilo para colocar a label acima do input */
-.container label{
+.container #descricao{
     display: block;
     margin-top: 10px; /*Distância superior das <label> em relação aos <input> */
     margin-bottom: 10px;

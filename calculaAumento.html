@@ -17,10 +17,11 @@
         <div class="container">
             <h1>Calcula Aumento de Salário</h1>
 
-            <label for="salario">Informe o salário:</label>
+            <label id="descricao" for="salario">Informe o salário:</label>
+            <label for="">R$</label>
             <input type="number" id="salario" step="1.00"><br>
 
-            <label for="cargo">Selecione a função:</label>
+            <label id="descricao" for="cargo">Selecione a função:</label>
             <select name="cargo" id="cargo">
                 <option value="em branco">---</option>
                 <option value="gerente">Gerente</option>
@@ -33,27 +34,37 @@
 
             <label for="resultado">Novo Salário:</label>
             <p id="resultado"></p>
-            
+
             <script>
                 function calcularAumento() {
-                    // Obter valor atual do salário e a função do funcionário escolhidos pelo usuário
+                    // Obtem valor atual do salário e a função do funcionário escolhidos pelo usuário
                     var salario = parseFloat(document.getElementById("salario").value);
                     var cargo = document.getElementById("cargo").value;
                     var percentual;
-                    
+
+                    //Atribui conforme o cargo um percentual de aumento
                     if (cargo == "gerente")
                         percentual = 1.05;
-                    if (cargo == "supervisor")
+                    else if (cargo == "supervisor")
                         percentual = 1.08;
-                    if (cargo == "operador")
+                    else if (cargo == "operador")
                         percentual = 1.09;
-                    if (cargo == "outros")
+                    else if (cargo == "outros")
                         percentual = 1.10;
-                    
-                    // Calculando novo salário
-                    var novoSalario = salario * percentual;
-                             
-                    document.getElementById("resultado").innerHTML = novoSalario.toFixed(2);
+                    else
+                        percentual = 1.00;
+
+
+                    //Testa se valor do salário não é nulo ou abaixo de R$ 0,00
+                    if (isNaN(salario) || (salario < 0))
+                        document.getElementById("resultado").innerHTML = "Valor de salário Inválido!"
+                    else if (percentual == 1.00)
+                        document.getElementById("resultado").innerHTML = "Escolha uma função!"
+                    else {
+                        // Calculando novo salário
+                        var novoSalario = salario * percentual;
+                        document.getElementById("resultado").innerHTML = "R$ " + novoSalario.toFixed(2);
+                    }
                 }
             </script>
 
