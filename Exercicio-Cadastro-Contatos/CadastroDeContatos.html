@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cadastro {
+
+            border: 2px solid #000;
+            /* Adiciona uma borda de 2px preta ao redor da div */
+            border-radius: 10px;
+            /* Adiciona um canto arredondado de 10px de raio */
+            padding: 30px;
+            /* Espaçamento interno para o conteúdo dentro da div */
+            text-align: center;
+            /* Centraliza o texto dentro da div */
+            background-color: lightgray;
+        }
+
+        /* Estilos para os inputs dentro da div */
+        .cadastro .titulo-dos-inputs {
+            display: block;
+            /* Coloca cada label e input em uma linha separada */
+            margin-top: 15px;
+            /* Espaçamento superior entre a <label> e o elementos anterior */
+            margin-bottom: 5px;
+            /* Espaçamento inferior entre a <label> e o elementos posterior */
+        }
+
+        /* Estilize os inputs como desejar */
+        .cadastro input {
+            width: 100%;
+            padding-top: 5px;
+            /* Altura das caixas de input */
+        }
+
+        .cadastro .botao {
+            margin-top: 10px;
+        }
+
+        .pagina {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .resultado {
+            display: flex;
+            justify-content: flex-start;
+            /*align-items: flex-start; /* Alinha o conteúdo à esquerda */
+            flex-direction: column;
+            width: 50vw;
+            height: 75vh;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-align: left;
+            /* Alinha o texto à esquerda */
+            background-color: lightgray;
+            padding: 10px;
+            /* Adicione espaço interno entre a tabela e a borda da div resultado*/
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0px;
+            /* Define o espaço entre as colunas da tabela */
+        }
+
+        thead {
+            background-color: rgb(139, 138, 138);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagina">
+        <div class="resultado">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Email</td>
+                        <td>Telefone</td>
+                        <td>Ação 01</td>
+                        <td>Ação 02</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Os dados do array serão listados aqui-->
+                </tbody>
+            </table>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="cadastro">
+
+                    <h3>Cadastro de Contatos</h3>
+                    <div>
+                        <label class="titulo-dos-inputs" for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Informe o nome">
+                    </div>
+                    <div>
+                        <label class="titulo-dos-inputs" for="email">e-mail</label>
+                        <input type="email" id="email" placeholder="Informe o e-mail">
+                    </div>
+                    <div>
+                        <label class="titulo-dos-inputs" for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="Informe o telefone">
+                    </div>
+                    <button class="botao" onclick="gravarContato()">Gravar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        //Inicializando uma matriz vazia para armazenar contatos. Cada contato será um objeto, que conterá nome, email e telefone
+        const contatos = [];
+
+        //Função que grava o contato no array 'contatos'
+        function gravarContato() {
+
+            const novoNome = document.getElementById("nome").value; // Obtém o valor (nome) do campo de input
+            const novoEmail = document.getElementById("email").value; // Obtém o valor (email) do campo de input
+            const novoTelefone = document.getElementById("telefone").value; // Obtém o valor (telefone) do campo de input
+
+            const contato = {
+                nome: novoNome,
+                email: novoEmail,
+                telefone: novoTelefone
+            }
+
+            contatos.push(contato);
+
+
+            //Limpa as informações do menu após dar um gravar
+            document.getElementById("nome").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("telefone").value = ""
+            carregarEmtabela();            
+        }
+
+        //Função que varre o array 'contatos' colocando cada posição dentro da variável 'contato'
+        function carregarEmtabela() {
+            // Inicializa uma string HTML com a tag <tbody>
+            let tabela = "<tbody>";
+
+            // Inicia um loop que percorre cada objeto 'contato' no array 'contatos'
+            // Cada <tr> representa uma linha da tabela. Cada <td> representa uma célula de dados na linha.
+            for (const contato of contatos) {
+                tabela += `
+                    <tr>
+                        <td>${contato.nome}</td>
+                        <td>${contato.email}</td>
+                        <td>${contato.telefone}</td>
+                        <td><button onclick="excluirContato('${contato.nome}')">Excluir</button></td>
+                        <td><button onclick="editarContato('${contato.nome}')">Editar</button></td>
+                    </tr>
+                `; // Para cada contato, adiciona uma nova linha <tr> à string 'tabela' com as informações de nome, email, telefone e um botão "Excluir"
+            }
+            // Fecha a tag <tbody> da tabela
+            tabela += "</tbody>";
+            // Atualiza o conteúdo da tabela no documento HTML com a string 'tabela' que foi construída
+            document.querySelector("table tbody").innerHTML = tabela;
+        }
+
+        function excluirContato(nome) {
+            const indice = contatos.findIndex(contato => contato.nome === nome);
+
+            if (indice !== -1) {
+                contatos.splice(indice, 1);
+                carregarEmtabela();
+            }
+        }
+
+        function editarContato(nome) {
+            const indice = contatos.findIndex(contato => contato.nome === nome);
+
+            if (indice !== -1) {
+                const contato = contatos[indice];
+
+                // Pré-preenche os campos de entrada com os valores do contato selecionado para alterar
+                document.getElementById("nome").value = contato.nome;
+                document.getElementById("email").value = contato.email;
+                document.getElementById("telefone").value = contato.telefone;
+
+                // Altera o título do formulário para "Editar Contato"
+                document.querySelector(".cadastro h3").textContent = "Editar Contato";
+
+                // Substitui o botão "Gravar" pelo botão "Alterar" e atribua a função alterarContato passando o indice
+                const gravarButton = document.querySelector(".cadastro .botao");
+                gravarButton.textContent = "Alterar"; //Altera o nome do botão
+                gravarButton.onclick = function () {  //Atribui uma nova função
+                    alterarContato(indice);
+                };
+            }
+        }
+
+
+        function alterarContato(ind) {
+
+            const nomeAlterado = document.getElementById("nome").value; // Obtém o valor (nome) do campo de input
+            const emailAlterado = document.getElementById("email").value; // Obtém o valor (email) do campo de input
+            const telefoneAlterado = document.getElementById("telefone").value; // Obtém o valor (telefone) do campo de input
+
+            const contatoAlterado = {
+                nome: nomeAlterado,
+                email: emailAlterado,
+                telefone: telefoneAlterado
+            }
+
+            contatos.splice(ind, 1, contatoAlterado);
+
+
+            if (ind !== -1) {
+                //Reescreve novamente a tela para que o título seja Cadastro de Contatos e o botão seja Gravar (com a função gravarContato() atribuida a ele novamente)
+                editar = `<section><div class='container'><div class='cadastro'><h3>Cadastro de Contatos</h3><div><label class='titulo-dos-inputs' for='nome'>Nome</label><input type='text' id='nome' placeholder='Informe o nome'></div><div><label class='titulo-dos-inputs' for='email'>e-mail</label><input type='email' id='email' placeholder='Informe o e-mail'></div><div><label class='titulo-dos-inputs' for='telefone'>Telefone</label><input type='tel' id='telefone' placeholder='Informe o telefone'></div><button class='botao' onclick='gravarContato()'>Gravar</button></div></div></div></section>`
+                document.querySelector("section").innerHTML = editar;
+                carregarEmtabela();
+                console.log(contatos);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
