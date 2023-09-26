@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números no Array</title>
+    <style>
+        .cadastro {
+            border: 2px solid #000;
+            /* Adiciona uma borda de 2px preta ao redor da div */
+            border-radius: 10px;
+            /* Adiciona um canto arredondado de 10px de raio */
+            padding: 20px;
+            /* Espaçamento interno para o conteúdo dentro da div */
+            text-align: center;
+            /* Centraliza o texto dentro da div */
+            background-color: lightgray;
+            /*Cor de fundo da div*/
+            max-width: 400px;
+            /* Defina a largura máxima desejada */
+        }
+
+        .cadastro label {
+            display: block;
+            /*Coloca a label acima do input por se tornar um elemento em bloco separado*/
+            margin-bottom: 10px;
+            /* Espaçamento inferior entre a <label> e o input */
+            font-weight: bold
+                /*Texto da label em negrito*/
+        }
+
+        .cadastro input {
+            outline: none;
+            /* Remove a borda de foco padrão */
+            border-radius: 5px;
+            /*Borda arredondada no input*/
+            margin-right: 20px;
+            /*Insere uma margem a direita entre o input e o botão inserir*/
+            border: solid 1px rgb(156, 156, 244);
+            box-shadow: 0 0 3px 3px rgb(156, 156, 244);
+        }
+
+        .botaoInserir {
+            border-radius: 5px;
+            border: solid 1px blueviolet;
+            color: white;
+            background-color: blueviolet;
+        }
+
+        .botaoInserir:hover {
+            border-radius: 5px;
+            border: solid 1px rgb(87, 5, 164);
+            color: white;
+            background-color: rgb(87, 5, 164);
+        }
+
+        .linhaOrdenar {
+            display: block; /*Coloca o select e o botão na linha de abaixo por torná-lo um elemento em bloco separado*/
+        }
+
+        .linhaOrdenar select {
+            margin-right: 30px; /*Insere uma margem a direita entre o select e o botão visualizar*/
+        }
+
+        .botaoOrdenar {            
+            /*Coloca o botão abaixo por torná-lo um elemento em bloco separado*/
+            margin: 10px auto;
+            /*Coloca uma margem de 10px em cima e abaixo, e o auto centraliza na horizontal*/
+            border-radius: 5px;
+            border: solid 1px blue;
+            color: blue;
+        }
+
+        .botaoOrdenar:hover {              
+            margin: 10px auto;
+            /*Coloca uma margem de 10px em cima e abaixo, e o auto centraliza na horizontal*/
+            border-radius: 5px;
+            border: solid 1px blue;
+            color: white;
+            background-color: blue;
+        }
+
+        .exibir {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cadastro">
+        <div>
+            <label for="number">Informe números a serem armazenados no array</label>
+            <input type="number" placeholder="Informe número">
+            <button class="botaoInserir" onclick="inserir(exibir)">Inserir</button>
+        </div>
+        <div class="linhaOrdenar">
+            <select name="opcaoVisualizar" id="opcaoVisualizar">
+                <option value="em branco">---</option>
+                <option value="ordemDigitada">Ordem Digitada</option>
+                <option value="ordemCrescente">Ordem Crescente</option>
+                <option value="ordemDecrescente">Ordem Decrescente</option>
+            </select>
+            <button class="botaoOrdenar" onclick="visualizar(exibir)">Visualizar</button>
+        </div>
+    </div>
+    <div class="exibir">
+        Numeros Inseridos: <span></span>
+    </div>
+    <div class="exibir">
+        Visualização Desejada: <span></span>
+    </div>
+    <script>
+        //========================================================
+        // Array global Numeros
+        //========================================================
+        let numeros = []
+
+        //========================================================
+        // Função Inserir
+        //========================================================
+        function inserir(posicaoOndeMostrar) {
+            let num = document.getElementsByTagName('input')[0]
+            numeros.push(parseInt(num.value))
+            //console.log(numeros).value  //Verifica em console os valores que estão dentro do array
+            num.value = ''
+            num.focus()
+            posicaoOndeMostrar(0)
+        }
+
+        //========================================================
+        // Função Visualizar
+        //========================================================
+        function visualizar(posicao) {
+            let numerosListar = "";
+            for (const num of numeros) {
+                numerosListar += `${num}, `;
+            }
+
+            // O comando substring(0, numerosListar.length -2) começa pegando um pedaço da string numeroListar, começando pela posição 0 e indo até o tamanho total dela menos dois. Significa que a virgula e o espaço final ficarão de fora da substring.
+            numerosListar = numerosListar.substring(0, numerosListar.length - 2)
+
+            //Outra forma de remover a virgula e o espaço final:
+            //if (numerosListar.endsWith(", ")) {
+            //    numerosListar = numerosListar.slice(0, -2);
+            //}
+
+            /*numerosListar.slice(0, -2): O método slice é usado para extrair uma parte de uma string. Neste caso, estamos especificando duas posições: 0 e -2.
+            0 (zero) indica o início da extração, ou seja, começamos a extrair a partir do primeiro caractere da string. -2 indica o final da extração, mas usando um valor negativo, estamos contando a partir do final da string. O valor -2 significa que estamos excluindo os dois últimos caracteres da string.*/
+
+            document.querySelectorAll("div.exibir span")[posicao].textContent = numerosListar;
+        }
+
+        //========================================================
+        // Função Ordenar
+        //========================================================
+        function ordenar(posicaoOndeMostrar) {
+            let trocou = true;
+            while (trocou) {
+                trocou = false;
+                for (let i = 0; i < numeros.length - 1; i++) {
+                    if (numeros[i] > numeros[i + 1]) {
+                        let temp = numeros[i];
+                        numeros[i] = numeros[i + 1];
+                        numeros[i + 1] = temp;
+                        trocou = true;
+                    }
+                }
+            }
+            //Quando a função for invocada, esse número será retornado. Na árvore Dom ele irá corresponder ao segundo elemento da matriz de span (0 = primeira; 1 = segunda; 2 = terceira...). Isso irá permitir fazer um callback e invocar a função exibir() no momento do click do botão que invoca esta função ordenar(). Como ela está retornando esse valor, o mesmo será passado para a função exibir(), onde dentro da mesma esse valor será a posição. 
+            posicaoOndeMostrar(1)
+        }
+
+    </script>
+
+</body>
+
+</html>
