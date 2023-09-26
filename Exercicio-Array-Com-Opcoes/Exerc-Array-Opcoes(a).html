@@ -57,15 +57,16 @@
         }
 
         .linhaOrdenar {
-            display: block; /*Coloca o select e o botão na linha de abaixo por torná-lo um elemento em bloco separado*/
+            display: block;
+            /*Coloca o select e o botão na linha de abaixo por torná-lo um elemento em bloco separado*/
         }
 
         .linhaOrdenar select {
-            margin-right: 30px; /*Insere uma margem a direita entre o select e o botão visualizar*/
+            margin-right: 30px;
+            /*Insere uma margem a direita entre o select e o botão visualizar*/
         }
 
-        .botaoOrdenar {            
-            /*Coloca o botão abaixo por torná-lo um elemento em bloco separado*/
+        .botaoOrdenar {
             margin: 10px auto;
             /*Coloca uma margem de 10px em cima e abaixo, e o auto centraliza na horizontal*/
             border-radius: 5px;
@@ -73,7 +74,24 @@
             color: blue;
         }
 
-        .botaoOrdenar:hover {              
+        .botaoOrdenar:hover {
+            margin: 10px auto;
+            /*Coloca uma margem de 10px em cima e abaixo, e o auto centraliza na horizontal*/
+            border-radius: 5px;
+            border: solid 1px blue;
+            color: white;
+            background-color: blue;
+        }
+
+        .botaoProcurar {
+            margin: 10px auto;
+            /*Coloca uma margem de 10px em cima e abaixo, e o auto centraliza na horizontal*/
+            border-radius: 5px;
+            border: solid 1px blue;
+            color: blue;
+        }
+
+        .botaoProcurar:hover {
             margin: 10px auto;
             /*Coloca uma margem de 10px em cima e abaixo, e o auto centraliza na horizontal*/
             border-radius: 5px;
@@ -93,7 +111,7 @@
         <div>
             <label for="number">Informe números a serem armazenados no array</label>
             <input type="number" placeholder="Informe número">
-            <button class="botaoInserir" onclick="inserir(exibir)">Inserir</button>
+            <button class="botaoInserir" onclick="inserir(visualizarOrdemOriginal)">Inserir</button>
         </div>
         <div class="linhaOrdenar">
             <select name="opcaoVisualizar" id="opcaoVisualizar">
@@ -102,7 +120,12 @@
                 <option value="ordemCrescente">Ordem Crescente</option>
                 <option value="ordemDecrescente">Ordem Decrescente</option>
             </select>
-            <button class="botaoOrdenar" onclick="visualizar(exibir)">Visualizar</button>
+            <button class="botaoOrdenar" onclick="ordenar(visualizar)">Visualizar</button>
+        </div>
+        <div class="linhaProcurar">
+            <label for="number">Informe números a ser procurado</label>
+            <input type="number" placeholder="Número procurado">
+            <button class="botaoProcurar" onclick="procurar(exibir)">Procurar</button>
         </div>
     </div>
     <div class="exibir">
@@ -111,11 +134,15 @@
     <div class="exibir">
         Visualização Desejada: <span></span>
     </div>
+    <div class="exibir">
+        Posição no array do valor procurado: <span></span>
+    </div>
     <script>
         //========================================================
         // Array global Numeros
         //========================================================
         let numeros = []
+        let numerosPosicaoInicial = []
 
         //========================================================
         // Função Inserir
@@ -123,6 +150,7 @@
         function inserir(posicaoOndeMostrar) {
             let num = document.getElementsByTagName('input')[0]
             numeros.push(parseInt(num.value))
+            numerosPosicaoInicial.push(parseInt(num.value))
             //console.log(numeros).value  //Verifica em console os valores que estão dentro do array
             num.value = ''
             num.focus()
@@ -130,11 +158,11 @@
         }
 
         //========================================================
-        // Função Visualizar
+        // Função Visualizar na Ordem Digitada
         //========================================================
-        function visualizar(posicao) {
+        function visualizarOrdemOriginal(posicao) {
             let numerosListar = "";
-            for (const num of numeros) {
+            for (const num of numerosPosicaoInicial) {
                 numerosListar += `${num}, `;
             }
 
@@ -153,21 +181,75 @@
         }
 
         //========================================================
+        // Função Visualizar
+        //========================================================
+        function visualizar(opc, posicao) {
+            if (opc === 1) {
+                let numerosListar = "";
+                for (const num of numeros) {
+                    numerosListar += `${num}, `;
+                }
+
+                // O comando substring(0, numerosListar.length -2) começa pegando um pedaço da string numeroListar, começando pela posição 0 e indo até o tamanho total dela menos dois. Significa que a virgula e o espaço final ficarão de fora da substring.
+                numerosListar = numerosListar.substring(0, numerosListar.length - 2)
+
+                document.querySelectorAll("div.exibir span")[posicao].textContent = numerosListar;
+            }
+            else if (opc === 2) {
+                let numerosListar = "";
+                for (const num of numerosPosicaoInicial) {
+                    numerosListar += `${num}, `;
+                }
+
+                // O comando substring(0, numerosListar.length -2) começa pegando um pedaço da string numeroListar, começando pela posição 0 e indo até o tamanho total dela menos dois. Significa que a virgula e o espaço final ficarão de fora da substring.
+                numerosListar = numerosListar.substring(0, numerosListar.length - 2)
+
+                document.querySelectorAll("div.exibir span")[posicao].textContent = numerosListar;
+            }
+        }
+
+
+
+        //========================================================
         // Função Ordenar
         //========================================================
-        function ordenar(posicaoOndeMostrar) {
-            let trocou = true;
-            while (trocou) {
-                trocou = false;
-                for (let i = 0; i < numeros.length - 1; i++) {
-                    if (numeros[i] > numeros[i + 1]) {
-                        let temp = numeros[i];
-                        numeros[i] = numeros[i + 1];
-                        numeros[i + 1] = temp;
-                        trocou = true;
+        function ordenar(opcao, posicaoOndeMostrar) {
+            let opcaoEscolhida = document.getElementById("opcaoVisualizar").value;
+
+            if (opcaoEscolhida === "ordemCrescente") {
+                let trocou = true;
+                while (trocou) {
+                    trocou = false;
+                    for (let i = 0; i < numeros.length - 1; i++) {
+                        if (numeros[i] > numeros[i + 1]) {
+                            let temp = numeros[i];
+                            numeros[i] = numeros[i + 1];
+                            numeros[i + 1] = temp;
+                            trocou = true;
+                        }
                     }
                 }
+                opcao(1)
             }
+            else if (opcaoEscolhida === "ordemDecrescente") {
+                let trocou = true;
+                while (trocou) {
+                    trocou = false;
+                    for (let i = 0; i < numeros.length - 1; i++) {
+                        if (numeros[i] < numeros[i + 1]) {
+                            let temp = numeros[i];
+                            numeros[i] = numeros[i + 1];
+                            numeros[i + 1] = temp;
+                            trocou = true;
+                        }
+                    }
+                }
+                opcao(1)
+            }
+            if (opcaoEscolhida === "ordemDigitada") {
+                opcao(2)
+            }
+
             //Quando a função for invocada, esse número será retornado. Na árvore Dom ele irá corresponder ao segundo elemento da matriz de span (0 = primeira; 1 = segunda; 2 = terceira...). Isso irá permitir fazer um callback e invocar a função exibir() no momento do click do botão que invoca esta função ordenar(). Como ela está retornando esse valor, o mesmo será passado para a função exibir(), onde dentro da mesma esse valor será a posição. 
             posicaoOndeMostrar(1)
         }
