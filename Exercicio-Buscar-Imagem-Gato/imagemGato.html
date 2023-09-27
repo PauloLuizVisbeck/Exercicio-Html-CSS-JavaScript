@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt.-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #imagem-gato{
+            border: 2px solid blue;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        button{
+            border: 1px solid blue;
+            border-radius: 5px;
+            color: blue;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button:hover{
+            border: 1px solid blue;
+            border-radius: 5px;
+            color: white;
+            background-color: blue;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="mostrarImagem()">Atualiza Imagem</button>
+        <!--alt é a msg quando não encontrar imagem--> 
+        <img id="imagem-gato" src="" alt="fotos de gatos"> 
+    </div>
+    <script>
+function mostrarImagem() {
+    //Esta linha inicia uma requisição HTTP para a URL especificada, que é a API de gatos (The Cat API) para buscar imagens de gatos.
+    fetch("https://api.thecatapi.com/v1/images/search")
+        // Após a resposta da requisição HTTP ser obtida, esta linha converte a resposta em formato JSON. O método .json() retorna uma promessa que será resolvida com os dados JSON da resposta.
+        .then((response) => response.json())
+        //Depois que os dados JSON da resposta forem obtidos com sucesso, este bloco de código é executado. Ele recebe os dados JSON como parâmetro e prossegue para a próxima linha.
+        .then((data) => {
+            //Nesta linha, a URL da imagem do gato é extraída dos dados JSON. A API provavelmente retorna um array de objetos JSON, e estamos acessando a URL da primeira imagem do array (data[0].url) para exibição.
+            const imageUrl = data[0].url;
+            //Aqui, estamos atualizando o atributo src da tag HTML com o ID "imagem-gato". Isso define a URL da imagem extraída dos dados JSON como a fonte da imagem da tag <img>. Portanto, a imagem do gato será exibida na página HTML.
+            document.getElementById("imagem-gato").src = imageUrl;
+        })
+        //Se ocorrer algum erro durante a requisição HTTP ou no processamento dos dados, este bloco de código será executado. Ele simplesmente registra o erro no console do navegador para fins de depuração.
+        .catch((error) => console.log(error));
+}    </script>
+</body>     
+
+</html>
