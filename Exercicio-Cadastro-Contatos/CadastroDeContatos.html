@@ -188,6 +188,7 @@
             const indice = contatos.findIndex(contato => contato.nome === nome);
 
             if (indice !== -1) {
+                //Busca dentro do array o objeto desejado (objeto é composto por nome, e-mail e telefone)
                 const contato = contatos[indice];
 
                 // Pré-preenche os campos de entrada com os valores do contato selecionado para alterar
