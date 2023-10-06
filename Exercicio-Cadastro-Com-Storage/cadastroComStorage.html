@@ -51,7 +51,7 @@
 
             //Verifica se o novo usuário já existe. Caso exista sai fora da função através do return
             if(localStorage.getItem('users')){
-                usuarios = JSON.parse(localStorage.getItem('users'))
+                let usuarios = JSON.parse(localStorage.getItem('users'))                
                 let usuarioJaExiste = usuarios.find((procurado) => procurado.email === contato.email)
                 if(usuarioJaExiste != undefined){
                     alert ('E-mail já cadastrado!')
