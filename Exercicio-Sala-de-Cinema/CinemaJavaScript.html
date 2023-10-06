@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Cinema</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+        }
+
+        section {
+            margin-top: 30px; /*Distância da div tela em relação ao hr*/
+            margin-left: 450px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .assento {
+            display: flex; /*Possibilita utilizar os comandos 'align-items: center' e 'justify-content: center'*/           
+            align-items: center; /*Alinha a numeração das cadeiras verticalmente*/
+            justify-content: center; /*Alinha a numeração das cadeiras horizontalmente*/
+            width: 30px;
+            height: 30px;
+            background-color: green;
+            margin: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .assento.marcado {
+            background-color: red;
+        }
+
+        .titulo-do-input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .botao {
+            background-color: rgb(85, 85, 246);
+            color: white;
+            display: block;  /* Faz com que o botão se posicione abaixo do input */
+            width: 70px; /*Largura do botão*/
+            border-radius: 8px;           
+            margin-top: 10px; /*Adiciona margem acima do botão para espaçamento com o input */
+        }
+
+        .tela {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*margin-right: 10px;*/
+            border: 2px solid #000;
+            width: 50%;
+            height: 40px;
+            font-size: 24px;
+            margin-top: 5px;
+            /*Distância superior entre a tela e o título*/
+            margin-bottom: 10px;
+            /*Distância inferior entre a tela e os botões*/
+        }
+
+        .tela p {
+            color: black;
+        }
+
+        .salaCinema {
+            margin-top: 30px; /* Distância entre os botões das cadeiras em relação a tela */
+            margin-left: 270px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Ao gerar a quantidade de cadeiras, faz com que quebre a linha e continue na linha inferior a distribuição*/
+            width: 60vw; /* Largura da sala de cinema*/
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <label class="titulo-do-input" for="Assentos">Quantidade de Assentos</label>
+        <input type="number" id="Assentos" placeholder="Informe a quantidade">
+        <button class="botao" onclick="gerarAssentos()">Gerar</button>
+    </div>
+
+    <hr>
+
+    <section>
+        <div class="tela">
+            <p>Tela</p>
+        </div>
+    </section>
+    
+    <!--Local onde serão posicionados os botões. Neste caso utilizei div, mas poderia ser button e aplicar a mesma formatação CSS-->
+    <div class="salaCinema" id="salaCinema"></div>
+
+    <hr>
+
+    <script>
+        function gerarAssentos() {
+            // Obtem a quantidade de assentos informada pelo usuário
+            var qtdAssentos = parseInt(document.getElementById("Assentos").value);
+
+            // Verifica se a entrada é um número válido
+            if (!isNaN(qtdAssentos) && qtdAssentos > 0) {
+                // Limpa qualquer assento existente
+                document.getElementById("salaCinema").innerHTML = "";
+
+                // Gera os botões (divs) de assentos
+                for (var i = 1; i <= qtdAssentos; i++) {
+                    var assento = document.createElement("div");
+                    assento.className = "assento";
+                    assento.innerText = i;
+                    assento.onclick = function () {
+                        // Adiciona ou remova a classe 'marcado' quando um assento for clicado
+                        if (this.classList.contains("marcado")) {
+                            this.classList.remove("marcado");
+                        } else {
+                            this.classList.add("marcado");
+                        }
+                    };
+
+                    // Adiciona o botão de assento ao container
+                    document.getElementById("salaCinema").appendChild(assento);
+                }
+            } else {
+                alert("Por favor, informe uma quantidade válida de assentos.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
