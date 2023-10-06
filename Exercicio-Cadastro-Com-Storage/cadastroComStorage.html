@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body style="margin-left: 20px;">
+    <div class="col-6">       
+            <div class="mb-3">
+                <h3>Cadastro</h3>
+                <label for="nome" class="form-label">Informe Nome</label>
+                <input type="text" class="form-control" id="nome">
+                <label for="email" class="form-label">Endereço de e-mail</label>
+                <input type="email" class="form-control" id="email">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha">
+
+                <button class="btn btn-primary mt-3 mb-3" onclick="gravarContato()">Gravar</button>
+
+                <h3>Informe dados de acesso</h3>
+                <label for="emailAcesso" class="form-label">Endereço de e-mail</label>
+                <input type="email" class="form-control" id="emailAcesso">
+                <label for="senhaAcesso" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senhaAcesso">
+
+                <button class="btn btn-primary mt-3" onclick="logar()">Logar</button>
+
+            </div>       
+    </div>
+    <script>
+        let contatos = [];
+
+
+        function gravarContato() {
+
+            const novoNome = document.getElementById("nome").value; // Obtém o valor (nome) do campo de input
+            const novoEmail = document.getElementById("email").value; // Obtém o valor (email) do campo de input
+            const novaSenha = document.getElementById("senha").value; // Obtém o valor (senha) do campo de input
+            
+            const contato = {
+                nome: novoNome,
+                email: novoEmail,
+                senha: novaSenha
+            }
+
+            //Verifica se o novo usuário já existe. Caso exista sai fora da função através do return
+            if(localStorage.getItem('users')){
+                usuarios = JSON.parse(localStorage.getItem('users'))
+                let usuarioJaExiste = usuarios.find((procurado) => procurado.email === contato.email)
+                if(usuarioJaExiste != undefined){
+                    alert ('E-mail já cadastrado!')
+                    return
+                }
+            }
+
+            //Verifica se há campos em branco. Caso exista sai fora da função através do return
+            //Se usar um && ao invés do || o programa permitiria que um dos campos ficasse em branco
+            if(contato.nome == '' || contato.email == '' || contato.senha == ''){
+                alert('Verifique os campos em branco!')
+                return
+            }
+                
+
+            //Se as verificações acima não abortar, contatos receberá o contato. Porém, antes é buscado os contatos que já estão no
+            //localStorage e atribuido a contatos. Senão fizesse isso, quando fechasse a página e abrisse novamente, o array contatos
+            //estaria zerado, e ao dar um push, o localStorage seria sobrescrito com apenas o(s) ultimo(s) contatos que o array recebeu
+            //após a página ter sido aberta.
+            if(localStorage.getItem('users')){
+                contatos = JSON.parse(localStorage.getItem('users'))
+            }
+            contatos.push(contato);
+            console.log(contatos);
+
+
+            //Limpa as informações do menu após dar um gravar
+            document.getElementById("nome").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("senha").value = ""
+            
+            //Se todos os controles acima passarem, localStorage será setado com o array contatos atualizado
+            localStorage.setItem('users', JSON.stringify(contatos))
+        }
+
+        function logar() {
+            const emailProcurado = document.getElementById("emailAcesso").value; // Obtém o valor (email) do campo de input
+            const senhaProcurada = document.getElementById("senhaAcesso").value; // Obtém o valor (senha) do campo de input
+
+            // Recupera os dados do localStorage e converte para um array de objetos
+            const contatosArmazenados = JSON.parse(localStorage.getItem('users'));
+
+            // Percorrer o array e verificar se o email e senha correspondem aos que estão sendo informados para logar
+            /*let encontrado = false;
+            for (let i = 0; i < contatosArmazenados.length; i++) {
+                const contato = contatosArmazenados[i];
+                if (contato.email === emailProcurado && contato.senha === senhaProcurada) {
+                    encontrado = true;
+                    break; // Se encontrou, pode sair do loop
+                }
+            }*/
+            
+            //O método find realiza o mesmo que o 'for' e o 'if' comentados acima realizam
+            let encontrado = contatosArmazenados.find((user) => user.email === emailProcurado && user.senha === senhaProcurada); 
+
+            if (encontrado) {                
+                document.getElementById('emailAcesso').value = '';
+                document.getElementById('senhaAcesso').value = '';
+                alert("Login bem-sucedido!");
+            } else {
+                alert("Email ou senha incorretos. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+
+</html>

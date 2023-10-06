@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cadastro {
+
+            border: 2px solid #000;
+            /* Adiciona uma borda de 2px preta ao redor da div */
+            border-radius: 10px;
+            /* Adiciona um canto arredondado de 10px de raio */
+            padding: 30px;
+            /* Espaçamento interno para o conteúdo dentro da div */
+            text-align: center;
+            /* Centraliza o texto dentro da div */
+            background-color: lightgray;
+        }
+
+        /* Estilos para os inputs dentro da div */
+        .cadastro .titulo-dos-inputs {
+            display: block;
+            /* Coloca cada label e input em uma linha separada */
+            margin-top: 15px;
+            /* Espaçamento superior entre a <label> e o elementos anterior */
+            margin-bottom: 5px;
+            /* Espaçamento inferior entre a <label> e o elementos posterior */
+        }
+
+        /* Estilize os inputs como desejar */
+        .cadastro input {
+            width: 100%;
+            padding-top: 5px;
+            /* Altura das caixas de input */
+        }
+
+        .cadastro .botao {
+            margin-top: 10px;
+        }
+
+        .pagina {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .resultado {
+            display: flex;
+            justify-content: flex-start;
+            /*align-items: flex-start; /* Alinha o conteúdo à esquerda */
+            flex-direction: column;
+            width: 50vw;
+            height: 75vh;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-align: left;
+            /* Alinha o texto à esquerda */
+            background-color: rgb(236, 236, 167);
+            padding: 10px;
+            /* Adicione espaço interno entre a tabela e a borda da div resultado*/
+        }
+
+        .resultado h2{
+            margin-left: 250px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0px;
+            /* Define o espaço entre as colunas da tabela */
+        }
+
+        thead {
+            background-color: rgb(139, 138, 138);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagina">
+        <div class="resultado">
+            <h2>Cupom Fiscal</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Produto</td>
+                        <td>Quantidade</td>
+                        <td>Valor Unitário</td>
+                        <td>Valor Total</td>
+                        <td>Ação 01</td>
+                        <td>Ação 02</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Os dados do array serão listados aqui-->
+                </tbody>
+            </table>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="cadastro">
+
+                    <h3>Cadastro de Produtos</h3>
+                    <div>
+                        <label class="titulo-dos-inputs" for="produto">Produto</label>
+                        <input type="text" id="produto" placeholder="Informe o produto">
+                    </div>
+                    <div>
+                        <label class="titulo-dos-inputs" for="quantidade">Quanidade</label>
+                        <input type="number" id="quantidade" placeholder="Informe quantidade">
+                    </div>
+                    <div>
+                        <label class="titulo-dos-inputs" for="valor">Valor</label>
+                        <input type="number" id="valor" placeholder="Informe valor" step="0.01"> <!-- Usado step="0.01" para garantir o uso de ponto decimal -->
+                    </div>
+                    <button class="botao" onclick="gravarProduto()">Gravar Produto</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        //Inicializando uma matriz vazia para armazenar contatos. Cada contato será um objeto, que conterá nome, email e telefone
+        const produtos = [];
+
+        //Função que grava o product no array 'produtos'. Product é um objeto composto por produto (nome), quantidade e valor.
+        function gravarProduto() {
+
+            const novoProduto = document.getElementById("produto").value; // Obtém o valor (produto) do campo de input
+            const novaQuantidade = document.getElementById("quantidade").value; // Obtém o valor (quantidade) do campo de input
+            const novoValor = document.getElementById("valor").value; // Obtém o valor (valor) do campo de input
+
+            const product = {
+                produto: novoProduto,
+                quantidade: novaQuantidade,
+                valor: novoValor
+            }
+
+            produtos.push(product);
+           //console.log(produtos)
+
+
+            //Limpa as informações do menu após dar um gravar
+            document.getElementById("produto").value = ""
+            document.getElementById("quantidade").value = ""
+            document.getElementById("valor").value = ""
+            carregarEmtabela();            
+        }
+
+        //Função que varre o array 'produtos' colocando cada posição dentro da variável 'product'
+        function carregarEmtabela() {            
+            // Inicializa uma string HTML com a tag <tbody>
+            let tabela = "<tbody>";
+
+            // Inicia um loop que percorre cada objeto 'product' no array 'produtos'
+            // Cada <tr> representa uma linha da tabela. Cada <td> representa uma célula de dados na linha.
+            for (const product of produtos) {
+                //let valorUnitario = product.valor.toFixed(2);
+                let valorTotal = (product.quantidade * product.valor);
+                                
+                tabela += `
+                    <tr>
+                        <td>${product.produto}</td>
+                        <td>${product.quantidade}</td>
+                        <td>${product.valor}</td>
+                        <td>${valorTotal.toFixed(2)}</td>
+                        <td><button onclick="excluirProduto('${product.produto}')">Excluir</button></td>
+                        <td><button onclick="editarProduto('${product.produto}')">Editar</button></td>
+                    </tr>
+                `; // Para cada product, adiciona uma nova linha <tr> à string 'tabela' com as informações de produto, quantidade, valor e um botão "Excluir" e "Editar"
+            }
+            // Fecha a tag <tbody> da tabela
+            tabela += "</tbody>";
+            // Atualiza o product da tabela no documento HTML com a string 'tabela' que foi construída
+            document.querySelector("table tbody").innerHTML = tabela;
+        }
+
+        function excluirProduto(produto) {
+            const indice = produtos.findIndex(product => product.produto === produto);
+
+            if (indice !== -1) {
+                produtos.splice(indice, 1);
+                carregarEmtabela();
+            }
+        }
+
+        function editarProduto(produto) {
+            const indice = produtos.findIndex(product => product.produto === produto);
+
+            if (indice !== -1) {
+                //Busca dentro do array o objeto desejado (objeto é composto por produto, quantidade e valor)
+                const product = produtos[indice];
+
+                // Pré-preenche os campos de entrada com os valores do contato selecionado para alterar
+                document.getElementById("produto").value = product.produto;
+                document.getElementById("quantidade").value = product.quantidade;
+                document.getElementById("valor").value = product.valor;
+
+                // Altera o título do formulário para "Editar Produto"
+                document.querySelector(".cadastro h3").textContent = "Editar Produto";
+
+                // Substitui o botão "Gravar" pelo botão "Alterar" e atribua a função alterarProduto passando o indice
+                const gravarButton = document.querySelector(".cadastro .botao");
+                gravarButton.textContent = "Alterar Produto"; //Altera o nome do botão
+                gravarButton.onclick = function () {  //Atribui uma nova função
+                    alterarProduto(indice);
+                };
+            }
+        }
+
+
+        function alterarProduto(ind) {
+
+            const produtoAlterado = document.getElementById("produto").value; // Obtém o valor (produto) do campo de input
+            const quantidadeAlterada = document.getElementById("quantidade").value; // Obtém o valor (quantidade) do campo de input
+            const valorAlterado = document.getElementById("valor").value; // Obtém o valor (valor) do campo de input
+
+            const productAlterado = {
+                produto: produtoAlterado,
+                quantidade: quantidadeAlterada,
+                valor: valorAlterado
+            }
+
+            produtos.splice(ind, 1, productAlterado);
+
+
+            if (ind !== -1) {
+                //Reescreve novamente a tela para que o título seja Cadastro de Contatos e o botão seja Gravar (com a função gravarContato() atribuida a ele novamente)
+                editar = `<section><div class='container'><div class='cadastro'><h3>Cadastro de Produtos</h3><div><label class='titulo-dos-inputs' for='produto'>Produto</label><input type='text' id='produto' placeholder='Informe o produto'></div><div><label class='titulo-dos-inputs' for='quantidade'>Quantidade</label><input type='number' id='quantidade' placeholder='Informe quantidade'></div><div><label class='titulo-dos-inputs' for='valor'>Valor</label><input type='number' id='valor' placeholder='Informe o valor'></div><button class='botao' onclick='gravarProduto()'>Gravar</button></div></div></div></section>`
+                document.querySelector("section").innerHTML = editar;
+                carregarEmtabela();
+                //console.log(produtos);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
