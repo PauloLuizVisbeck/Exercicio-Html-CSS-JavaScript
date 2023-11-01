@@ -1,0 +1,14 @@
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.exe
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.deps.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.runtimeconfig.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.AssemblyInfoInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.AssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.csproj.CoreCompileInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\refint\ClasseCarroComLista.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.genruntimeconfig.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ref\ClasseCarroComLista.dll
