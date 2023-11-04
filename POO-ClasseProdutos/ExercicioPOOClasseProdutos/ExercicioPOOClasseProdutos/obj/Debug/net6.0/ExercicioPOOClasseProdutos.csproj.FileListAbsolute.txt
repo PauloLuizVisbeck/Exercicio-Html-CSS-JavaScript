@@ -1,0 +1,14 @@
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\bin\Debug\net6.0\ExercicioPOOClasseProdutos.exe
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\bin\Debug\net6.0\ExercicioPOOClasseProdutos.deps.json
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\bin\Debug\net6.0\ExercicioPOOClasseProdutos.runtimeconfig.json
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\bin\Debug\net6.0\ExercicioPOOClasseProdutos.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\bin\Debug\net6.0\ExercicioPOOClasseProdutos.pdb
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ExercicioPOOClasseProdutos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ExercicioPOOClasseProdutos.AssemblyInfoInputs.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ExercicioPOOClasseProdutos.AssemblyInfo.cs
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ExercicioPOOClasseProdutos.csproj.CoreCompileInputs.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ExercicioPOOClasseProdutos.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\refint\ExercicioPOOClasseProdutos.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ExercicioPOOClasseProdutos.pdb
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ExercicioPOOClasseProdutos.genruntimeconfig.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutos\ExercicioPOOClasseProdutos\ExercicioPOOClasseProdutos\obj\Debug\net6.0\ref\ExercicioPOOClasseProdutos.dll
