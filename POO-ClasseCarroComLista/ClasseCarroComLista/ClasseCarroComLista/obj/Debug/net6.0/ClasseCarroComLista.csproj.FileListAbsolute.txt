@@ -12,3 +12,17 @@ C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroCom
 C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.pdb
 C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.genruntimeconfig.cache
 C:\Users\paulo.visbeck\Desktop\Exercicios\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ref\ClasseCarroComLista.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.AssemblyInfoInputs.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.AssemblyInfo.cs
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.csproj.CoreCompileInputs.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\refint\ClasseCarroComLista.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.pdb
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.exe
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.deps.json
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.runtimeconfig.json
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\bin\Debug\net6.0\ClasseCarroComLista.pdb
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ClasseCarroComLista.genruntimeconfig.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseCarroComLista\ClasseCarroComLista\ClasseCarroComLista\obj\Debug\net6.0\ref\ClasseCarroComLista.dll

@@ -24,12 +24,6 @@
             Cor = cor;
         }
 
-        //Construtor com apenas dois parâmetros
-        public Carro(string placa, string modelo)
-        {
-            Placa = placa;
-            Modelo = modelo;
-        }
 
         //================================================================================
         //Propriedades de acesso aos atributos privados
@@ -40,8 +34,11 @@
             get { return placa; }
             set
             {
-                if (value.Length < 7)
+                if (value.Length < 7 || value.Equals(""))
+                {
                     Console.WriteLine("Informação de placa deve ter no mínimo 7 caracteres!");
+                    placa = "XXXXXXX";
+                }
                 else
                     placa = value;
             }
@@ -64,8 +61,8 @@
             get { return modelo; }
             set
             {
-                if (value.Length < 3)
-                    Console.WriteLine("Informação de modelo deve ter no mínimo 3 caracteres!");
+                if (value.Length < 2)
+                    Console.WriteLine("Informação de modelo deve ter no mínimo 2 caracteres!");
                 else
                     modelo = value;
             }
