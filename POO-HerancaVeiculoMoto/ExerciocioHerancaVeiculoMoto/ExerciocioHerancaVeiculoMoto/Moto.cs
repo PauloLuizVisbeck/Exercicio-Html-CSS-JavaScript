@@ -22,5 +22,8 @@
             string vemDeVeiculo = base.ToString();
             return $"{vemDeVeiculo}, Cilindrada: {Cilindradas},  Tipo de Pneu: {TipoPneu}, Suspensão: {Suspensao}";
         }
+
+        //A linha do return poderia ser escrito sem a necessidade de criar a variável:
+        //return $"{base.ToString()}, Cilindrada: {Cilindradas},  Tipo de Pneu: {TipoPneu}, Suspensão: {Suspensao}";
     }
 }
