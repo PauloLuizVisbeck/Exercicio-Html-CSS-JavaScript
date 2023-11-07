@@ -1,0 +1,14 @@
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\bin\Debug\net6.0\ClasseProdutosComLista.exe
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\bin\Debug\net6.0\ClasseProdutosComLista.deps.json
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\bin\Debug\net6.0\ClasseProdutosComLista.runtimeconfig.json
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\bin\Debug\net6.0\ClasseProdutosComLista.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\bin\Debug\net6.0\ClasseProdutosComLista.pdb
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ClasseProdutosComLista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ClasseProdutosComLista.AssemblyInfoInputs.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ClasseProdutosComLista.AssemblyInfo.cs
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ClasseProdutosComLista.csproj.CoreCompileInputs.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ClasseProdutosComLista.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\refint\ClasseProdutosComLista.dll
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ClasseProdutosComLista.pdb
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ClasseProdutosComLista.genruntimeconfig.cache
+C:\Users\pls_r\Desktop\Exercicio-Html-CSS-JavaScript\POO-ClasseProdutosComLista\ClasseProdutosComLista\ClasseProdutosComLista\obj\Debug\net6.0\ref\ClasseProdutosComLista.dll
