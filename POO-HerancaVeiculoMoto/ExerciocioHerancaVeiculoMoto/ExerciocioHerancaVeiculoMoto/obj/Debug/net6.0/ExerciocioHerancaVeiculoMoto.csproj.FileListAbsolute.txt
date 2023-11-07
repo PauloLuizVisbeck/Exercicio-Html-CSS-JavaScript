@@ -1,0 +1,14 @@
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\bin\Debug\net6.0\ExerciocioHerancaVeiculoMoto.exe
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\bin\Debug\net6.0\ExerciocioHerancaVeiculoMoto.deps.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\bin\Debug\net6.0\ExerciocioHerancaVeiculoMoto.runtimeconfig.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\bin\Debug\net6.0\ExerciocioHerancaVeiculoMoto.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\bin\Debug\net6.0\ExerciocioHerancaVeiculoMoto.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ExerciocioHerancaVeiculoMoto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ExerciocioHerancaVeiculoMoto.AssemblyInfoInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ExerciocioHerancaVeiculoMoto.AssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ExerciocioHerancaVeiculoMoto.csproj.CoreCompileInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ExerciocioHerancaVeiculoMoto.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\refint\ExerciocioHerancaVeiculoMoto.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ExerciocioHerancaVeiculoMoto.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ExerciocioHerancaVeiculoMoto.genruntimeconfig.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-HerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\ExerciocioHerancaVeiculoMoto\obj\Debug\net6.0\ref\ExerciocioHerancaVeiculoMoto.dll
