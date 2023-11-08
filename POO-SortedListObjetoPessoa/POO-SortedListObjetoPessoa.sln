@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO-SortedListObjetoPessoa", "POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa.csproj", "{95C8C26F-FCD7-4F36-AEB6-0A7A45CB5126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95C8C26F-FCD7-4F36-AEB6-0A7A45CB5126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C8C26F-FCD7-4F36-AEB6-0A7A45CB5126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C8C26F-FCD7-4F36-AEB6-0A7A45CB5126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C8C26F-FCD7-4F36-AEB6-0A7A45CB5126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D26136F6-FAFA-4F85-934D-4E72BB9057A5}
+	EndGlobalSection
+EndGlobal

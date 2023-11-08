@@ -1,0 +1,14 @@
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\bin\Debug\net6.0\POO-SortedListObjetoPessoa.exe
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\bin\Debug\net6.0\POO-SortedListObjetoPessoa.deps.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\bin\Debug\net6.0\POO-SortedListObjetoPessoa.runtimeconfig.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\bin\Debug\net6.0\POO-SortedListObjetoPessoa.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\bin\Debug\net6.0\POO-SortedListObjetoPessoa.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\POO-SortedListObjetoPessoa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\POO-SortedListObjetoPessoa.AssemblyInfoInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\POO-SortedListObjetoPessoa.AssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\POO-SortedListObjetoPessoa.csproj.CoreCompileInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\POO-SortedListObjetoPessoa.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\refint\POO-SortedListObjetoPessoa.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\POO-SortedListObjetoPessoa.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\POO-SortedListObjetoPessoa.genruntimeconfig.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoPessoa\POO-SortedListObjetoPessoa\obj\Debug\net6.0\ref\POO-SortedListObjetoPessoa.dll
