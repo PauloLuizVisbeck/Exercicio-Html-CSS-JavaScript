@@ -1,0 +1,14 @@
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\bin\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.exe
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\bin\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.deps.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\bin\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.runtimeconfig.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\bin\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\bin\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.AssemblyInfoInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.AssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.csproj.CoreCompileInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\refint\POO-SortedListObjetoCategoriaProduto.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\POO-SortedListObjetoCategoriaProduto.genruntimeconfig.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\POO-SortedListObjetoCategoriaProduto\POO-SortedListObjetoCategoriaProduto\obj\Debug\net6.0\ref\POO-SortedListObjetoCategoriaProduto.dll
