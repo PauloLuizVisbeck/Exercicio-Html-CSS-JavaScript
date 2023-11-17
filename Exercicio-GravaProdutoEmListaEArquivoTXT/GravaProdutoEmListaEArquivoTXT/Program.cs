@@ -13,6 +13,54 @@ namespace GravaProdutoEmListaEArquivoTXT
             //Declaração de uma variável chamada "local" do tipo string que contém o caminho do arquivo no sistema de arquivos.
             string local = @"C:\Users\paulo.visbeck\Desktop\Produtos\ArqProdutos.txt";
 
+            //==================================================================================================================
+            //Carrega os arquivos que já estão no text para a lista:
+            //==================================================================================================================
+            try
+            {   
+                // Verifica se o arquivo existe
+                if (File.Exists(local))
+                {
+                    // Lê todas as linhas do arquivo
+                    string[] linhas = File.ReadAllLines(local);
+
+                    foreach (string linha in linhas)
+                    {
+                        // Divide cada linha em partes usando ", " como separador
+                        string[] partes = linha.Split(new string[] { ", " }, StringSplitOptions.None);
+
+                        // Extrai os valores de cada parte
+                        string codigo = partes[0].Split(':')[1].Trim();
+                        string descricao = partes[1].Split(':')[1].Trim();
+                        int estoque = int.Parse(partes[2].Split(':')[1].Trim());
+                        // Ajusta o valor unitário que está na última parte da linha
+                        double valorUnitario = double.Parse(partes[3].Split(':')[1].Trim().Replace('.', ','));
+
+                        // Cria um novo objeto Produto com as informações obtidas e adiciona à lista
+                        Produto produto = new Produto(codigo, descricao, estoque, valorUnitario);
+                        produtos.Add(produto);
+                    }
+
+                    // Exibe os produtos carregados na lista
+                    foreach (Produto produto in produtos)
+                    {
+                        Console.WriteLine(produto.ToString());
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("O arquivo não foi encontrado.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+
+            //==================================================================================================================
+            //Fim do trecho que carrega os arquivos que já estão no text para a lista:
+            //==================================================================================================================
+
 
             int opcao = 0;
             while (opcao != 6)
@@ -58,6 +106,9 @@ namespace GravaProdutoEmListaEArquivoTXT
                                 //Setando valores lidos no objeto produto
                                 produtos.Add(new Produto(codigo, descricao, estoque, valorUnitario));
 
+                                //=====================================================================================================
+                                //A função comentada abaixo realiza a cada leitura de produto, a inserção do mesmo em arquivo TXT
+                                //=====================================================================================================
                                 /*
                                 //Verifica se o arquivo especificado pela variável "caminho" não existe
                                 if (!File.Exists(local))

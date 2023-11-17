@@ -12,3 +12,17 @@ C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\GravaProdutoEmListaEArquivoT
 C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.pdb
 C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.genruntimeconfig.cache
 C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\ref\GravaProdutoEmListaEArquivoTXT.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\bin\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.exe
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\bin\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.deps.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\bin\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.runtimeconfig.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\bin\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\bin\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.AssemblyInfoInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.AssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.csproj.CoreCompileInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\refint\GravaProdutoEmListaEArquivoTXT.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\GravaProdutoEmListaEArquivoTXT.genruntimeconfig.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\Exercicio-GravaProdutoEmListaEArquivoTXT\GravaProdutoEmListaEArquivoTXT\obj\Debug\net6.0\ref\GravaProdutoEmListaEArquivoTXT.dll
