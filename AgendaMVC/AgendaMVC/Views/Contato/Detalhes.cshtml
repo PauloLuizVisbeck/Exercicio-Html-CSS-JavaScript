@@ -1,0 +1,27 @@
+﻿@model AgendaMVC.Models.Contato
+@{
+    ViewData["title"] = "Detalhes";
+}
+<h1>@ViewData["title"]</h1>
+<div>
+    <p class="form-group">
+        <span class="fw-bold">@Html.DisplayNameFor(model => model.Id):</span>
+        @Html.DisplayFor(model => model.Id)
+    </p>
+    <p>
+        <span class="fw-bold">@Html.DisplayNameFor(model => model.Nome):</span>
+        @Html.DisplayFor(model => model.Nome)
+    </p>
+    <p>
+        <span class="fw-bold">@Html.DisplayNameFor(model => model.Email):</span>
+        @Html.DisplayFor(model => model.Email)
+    </p>
+    <p>
+        <span class="fw-bold">@Html.DisplayNameFor(model => model.Fone):</span>
+        @Html.DisplayFor(model => model.Fone)
+    </p>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.Id }) |
+    <a asp-action="Editar" asp-route-id="@Model?.Id">Editar</a>
+    <a asp-action="Index">Back To List</a>
+
+</div>

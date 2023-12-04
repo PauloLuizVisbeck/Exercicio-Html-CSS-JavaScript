@@ -1,0 +1,23 @@
+﻿@model AgendaMVC.Models.Contato
+
+<h2>Confirmação de exclusão</h2>
+
+<p>Tem certeza de que deseja excluir o contato abaixo?</p>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <!-- Adicione outras propriedades do contato que deseja exibir -->
+    </dl>
+</div>
+
+<form asp-action="ConfirmarDelecao" asp-route-id="@ViewData["Id"]" method="post">
+    <input type="submit" value="Sim" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">Não</a>
+</form>
+

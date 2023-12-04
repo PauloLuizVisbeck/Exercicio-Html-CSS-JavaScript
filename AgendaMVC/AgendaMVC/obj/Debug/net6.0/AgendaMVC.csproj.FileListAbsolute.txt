@@ -1,0 +1,133 @@
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\appsettings.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.staticwebassets.runtime.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.exe
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.deps.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.runtimeconfig.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.pdb
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.AssemblyInfoInputs.cache
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.AssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.csproj.CoreCompileInputs.cache
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.RazorAssemblyInfo.cache
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.RazorAssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.AgendaMVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.build.AgendaMVC.props
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AgendaMVC.props
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AgendaMVC.props
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\scopedcss\bundle\AgendaMVC.styles.css
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\scopedcss\projectbundle\AgendaMVC.bundle.scp.css
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\refint\AgendaMVC.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.pdb
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.genruntimeconfig.cache
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\ref\AgendaMVC.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.csproj.AssemblyReference.cache
+C:\Users\paulo.visbeck\Desktop\Paulo Visbeck\POO-C#\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.csproj.CopyComplete
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\appsettings.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.staticwebassets.runtime.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.exe
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.deps.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.runtimeconfig.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\AgendaMVC.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.csproj.AssemblyReference.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.AssemblyInfoInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.AssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.csproj.CoreCompileInputs.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.RazorAssemblyInfo.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.RazorAssemblyInfo.cs
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.sourcelink.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.AgendaMVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.build.AgendaMVC.props
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AgendaMVC.props
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AgendaMVC.props
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\scopedcss\bundle\AgendaMVC.styles.css
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\scopedcss\projectbundle\AgendaMVC.bundle.scp.css
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.csproj.CopyComplete
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\refint\AgendaMVC.dll
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.pdb
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\AgendaMVC.genruntimeconfig.cache
+C:\Users\paulo.visbeck\Desktop\Exercicios\AgendaMVC\AgendaMVC\obj\Debug\net6.0\ref\AgendaMVC.dll
