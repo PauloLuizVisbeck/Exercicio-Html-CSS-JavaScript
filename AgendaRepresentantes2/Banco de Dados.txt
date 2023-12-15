@@ -1,0 +1,57 @@
+create database bd_prack;
+CREATE TABLE Empresa (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    razaoSocial VARCHAR(100) NOT NULL,
+    cnpj VARCHAR(15) NOT NULL,
+    inscEstadual VARCHAR(14) NOT NULL,
+    CEP VARCHAR(50) NOT NULL,
+    Cidade VARCHAR(50) NOT NULL,
+    Bairro VARCHAR(50) NOT NULL,
+    rua VARCHAR(50) NOT NULL,
+    numero VARCHAR(10) NOT NULL, 
+    fone VARCHAR(14) NOT NULL, 
+    email VARCHAR(100) NOT NULL, 
+    status VARCHAR(7) NOT NULL
+);
+
+CREATE TABLE Representante (
+id INT PRIMARY KEY AUTO_INCREMENT,
+razaoSocial VARCHAR(100) NOT NULL,
+cnpj VARCHAR(15) NOT NULL,
+fone VARCHAR(14) NOT NULL, 
+email VARCHAR(100) NOT NULL, 
+core VARCHAR(50) NOT NULL,
+status VARCHAR(7) NOT NULL
+);
+
+CREATE TABLE Loja (
+id INT PRIMARY KEY AUTO_INCREMENT,
+razaoSocial VARCHAR(100) NOT NULL,
+cnpj VARCHAR(15) NOT NULL,
+inscEstadual VARCHAR(14) NOT NULL,
+ CEP VARCHAR(50) NOT NULL,
+Cidade VARCHAR(50) NOT NULL,
+Bairro VARCHAR(50) NOT NULL,
+rua VARCHAR(50) NOT NULL,
+numero VARCHAR(10) NOT NULL, 
+fone VARCHAR(14) NOT NULL, 
+email VARCHAR(100) NOT NULL, 
+status VARCHAR(7) NOT NULL
+);
+
+CREATE TABLE Pedidos (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Valor DECIMAL(10,2) NOT NULL,
+    Data DATETIME NOT NULL,
+    status bool not null,
+    PercentualComissao DECIMAL(5,2) NOT NULL,
+    EmpresaID INT,
+    RepresentanteID INT,
+    LojaID INT,
+    FOREIGN KEY (EmpresaID) REFERENCES Empresa(id),
+    FOREIGN KEY (RepresentanteID) REFERENCES Representante(id),
+    FOREIGN KEY (LojaID) REFERENCES Loja(id)
+);
+drop table Pedidos;
+select * from Representante;
+SELECT * FROM Pedidos where status = 1 and RepresentanteID = 2

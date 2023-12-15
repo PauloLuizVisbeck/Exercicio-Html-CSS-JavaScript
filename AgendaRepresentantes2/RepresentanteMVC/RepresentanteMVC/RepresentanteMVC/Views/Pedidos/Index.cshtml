@@ -1,0 +1,92 @@
+﻿@model RepresentanteMVC.Models.Pedidos
+@{
+	ViewData["Title"] = "Login";
+}
+<html>
+
+<head>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			font-size: 15px;
+		}
+
+		.lis {
+			display: flex;
+			flex-direction: column;
+			background-color: royalblue;
+			border-radius: 20px;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			width:500px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+
+		button {
+			background-color: white;
+			border: solid white;
+			border-radius: 25px;
+			color: black;
+			margin-top: 2px;
+			margin-bottom: 5px;
+			width: 100px;
+			justify-items: center;
+		}
+
+			button:active {
+				background-color: lightgray;
+				border: solid lightgray;
+				border-radius: 25px;
+				color: black;
+				margin-top: 5px;
+				margin-bottom: 2px;
+			}
+
+		input {
+			border: solid white;
+			margin-top: 10px;
+			margin-bottom:25px;
+			border-radius: 20px;
+			width: 300px;
+			justify-items: center;
+			color: black;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<div class="lis">
+		<h2 class="center">@ViewData["Title"]</h2>
+		<form asp-action="verificarAcesso">
+			<div>
+				<input asp-for="Representante.Id" placeholder="Cadastro" />
+			</div>
+			<div>
+				<input asp-for="Representante.Cnpj" placeholder="CNPJ" />
+			</div>
+
+			<div>
+				<button asp-action="verificarAcesso">Login</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
+
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

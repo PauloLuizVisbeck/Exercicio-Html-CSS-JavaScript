@@ -1,0 +1,77 @@
+﻿@model IEnumerable<RepresentanteMVC.Models.Representante>
+@{
+	ViewData["Title"] = "Representantes";
+}
+<style>
+	table{
+		text-align:center;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	table thead{
+		border-bottom:solid royalblue;
+	}
+	table td{
+		padding:15px;
+		border-bottom:solid royalblue 2px;
+			line-height: 20px;
+	}
+
+	thead:first-child {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0px;
+		color:white;
+		background-color:#283541;
+		
+	}
+	th{
+		padding:15px;
+
+	}
+</style>
+<h1 class="text-center">@ViewData["title"]</h1>
+<p>
+	<a asp-action="Create">Cadastrar</a>
+</p>
+
+<table>
+	<thead>
+		<tr>			
+			<th>
+				@Html.ActionLink("Id", "Index", new { sortOrder = ViewBag.IdSortParm })
+			</th>
+			<th>
+				<a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">
+					@Html.DisplayNameFor(model => model.RazaoSocial)
+				</a>
+			</th>
+			<th>@Html.DisplayNameFor(representante => representante.Cnpj)</th>
+			<th>@Html.DisplayNameFor(representante => representante.Core)</th>
+			<th>@Html.DisplayNameFor(representante => representante.Fone)</th>
+			<th>@Html.DisplayNameFor(representante => representante.Email)</th>
+			<th>@Html.DisplayNameFor(representante => representante.Status) </th>
+			<th>Funções</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var representante in Model)
+		{
+			<tr>
+				<td>@Html.DisplayFor(model => representante.Id)</td>
+				<td>@Html.DisplayFor(model => representante.RazaoSocial)</td>
+				<td>@Html.DisplayFor(model => representante.Cnpj)</td>
+				<td>@Html.DisplayFor(model => representante.Core)</td>
+				<td>@Html.DisplayFor(model => representante.Fone)</td>
+				<td>@Html.DisplayFor(model => representante.Email)</td>
+				<td>@Html.DisplayFor(model => representante.Status)</td>
+				<td>
+					@Html.ActionLink("Editar", "Edit", new {id=representante.Id}) |
+					@Html.ActionLink("Excluir", "Delete", new {id=representante.Id}, new { onclick = "return confirm('Tem certeza que deseja excluir o representante?')"})
+				</td>
+			</tr>
+		}
+
+	</tbody>
+</table>
+
