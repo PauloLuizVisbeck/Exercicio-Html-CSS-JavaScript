@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Api Produtos</title>
+    <script src="./ProdutosControle.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="../estilo.css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <nav>
+        <a class="link" href="../Index.html">Inicio</a>
+        <a class="link" href="../Produto/Produtos.html">Produtos</a>
+        <a class="link" href="../Categoria/Categoria.html">Categoria</a>
+        <span id="userRole"></span>
+    </nav>
+    <div id="edit"></div>
+    <div>
+        <h1>Produtos</h1>
+
+        <input type="text" id="descricao" placeholder="Descrição">
+        <input type="number" id="preco" placeholder="Preço">
+        <input type="number" id="estoque" placeholder="Estoque">
+        <input type="number" id="categoriaid" placeholder="Id da Categoria">
+        <button onclick="criar()">Criar</button>
+        <button onclick="carregar()">Listar Produtos</button>
+    </div>
+    <hr>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Descricao</th>
+                <th>Preco</th>
+                <th>Estoque</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <!--Local onde a tabela de Produtos será criada-->
+        <tbody id="tableprodutos"></tbody>
+    </table>
+</body>
+<script>
+    // No final do seu arquivo HTML ou em um arquivo JavaScript comum a todas as páginas
+    const userRole = localStorage.getItem('userRole');
+    const userRoleElement = document.getElementById('userRole');
+
+    if (userRoleElement) {
+        userRoleElement.textContent = `Logado como: ${userRole || 'Convidado'}`;
+    } 
+</script>
+
+</html>
